@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to ASCII Art</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://js.stripe.com/v3/"></script> <!-- Stripe.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> <!-- html2canvas -->
+</head>
+<body>
+    <div class="container">
+        <h1>Image to ASCII Art Converter</h1>
+        <p>Upload an image to convert it into colorful ASCII art.</p>
+        <input type="file" id="imageInput" accept="image/*">
+        <div class="output-container">
+            <pre id="asciiArt"></pre>
+        </div>
+        <div class="buttons">
+            <button id="downloadTxtBtn" disabled>Download as TXT</button>
+            <button id="downloadPngBtn" disabled>Download as PNG</button>
+            <button id="goBackBtn" style="display: none;">Go Back</button>
+        </div>
+        <div class="social-sharing" style="display: none;">
+            <p>Share your masterpiece:</p>
+            <button id="shareTwitterBtn">Twitter</button>
+            <button id="shareFacebookBtn">Facebook</button>
+            <button id="shareInstagramBtn">Instagram</button>
+        </div>
+        <div class="premium-section">
+            <p>Unlock a premium filter for $1!</p>
+            <button id="unlockPremiumBtn">Unlock Premium Filter</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
